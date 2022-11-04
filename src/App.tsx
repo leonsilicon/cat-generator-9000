@@ -1,7 +1,7 @@
 import { useState } from "react";
 
 function getRandomCatUrl() {
-  const randomInt = Math.floor(Math.random() * 196 + 1);
+  const randomInt = Math.floor(Math.random() * 195 + 1);
   return `/cat${randomInt}.png`;
 }
 
