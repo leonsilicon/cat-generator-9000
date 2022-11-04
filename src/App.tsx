@@ -1,13 +1,15 @@
+import { useState } from "react";
+
 function getRandomCatUrl() {
   const randomInt = Math.floor(Math.random() * 196 + 1);
   return `/cat${randomInt}.png`;
 }
 
 function CatGenerator() {
-  let catUrl = getRandomCatUrl();
+  let [catUrl, setCatUrl] = useState(getRandomCatUrl());
 
   const generateCat = () => {
-    catUrl = getRandomCatUrl();
+    setCatUrl(getRandomCatUrl());
   };
 
   return (
