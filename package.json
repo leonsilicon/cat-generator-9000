@@ -4,7 +4,7 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "vite",
+    "dev": "tunnel -a cat-generator -p 5173 -- vite",
     "build": "tsc && vite build",
     "preview": "vite preview"
   },
